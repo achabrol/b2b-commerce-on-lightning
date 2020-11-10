@@ -7,6 +7,6 @@ sfdx shane:org:create -f config/project-scratch-def.json -d 1 -s --json --userpr
 sfdx force:source:push -f
 sfdx force:user:permset:assign -n CustomerID
 sfdx shane:user:password:set -l User -g User -p sfdx1234 --json
-sh ./quickstart-create-store.sh
+sh ./quickstart-create-store.sh myFirstStore
 sh ./quickstart-setup-store.sh myFirstStore
 sfdx force:org:open
